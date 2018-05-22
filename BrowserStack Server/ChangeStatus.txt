@@ -1,0 +1,2 @@
+visit Link for commands:
+https://www.browserstack.com/app-automate/rest-api

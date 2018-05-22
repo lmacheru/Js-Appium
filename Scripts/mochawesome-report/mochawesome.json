@@ -1,0 +1,117 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-05-10T09:13:58.979Z",
+    "end": "2018-05-10T09:14:00.797Z",
+    "duration": 1818,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 2,
+    "hasOther": true,
+    "skipped": 1,
+    "hasSkipped": true,
+    "passPercentClass": "danger",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "d718bc8e-a0a4-453e-95e3-6ebad5ae8035",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "d2ec3109-9502-474d-89ba-73e74da0baf4",
+        "title": "android",
+        "fullFile": "C:\\Users\\bbdnet1454\\Desktop\\Projects\\Automation\\Js Appium\\Scripts\\USSD.js",
+        "file": "\\USSD.js",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook",
+            "fullTitle": "android \"before all\" hook",
+            "timedOut": false,
+            "duration": 1178,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "driver = wd.promiseChainRemote(\"https://eu1.appium.testobject.com/wd/hub\");\n   await driver.init(capsAndroid).setImplicitWaitTimeout(5000);",
+            "err": {
+              "message": "Error: [init({\"platformName\":\"Android\",\"deviceName\":\"Android Emulator\",\"appActivity\":\"com.android.dialer.DialtactsActivity\",\"appPackage\":\"com.android.dialer\",\"androidInstallTimeout\":90000,\"autoGrantPermissions\":\"true\",\"testobject_api_key\":\"09D588383E3B4F7BAD6512B5889B0328\"})] The environment you requested was unavailable.\nThere is no device that matches your criteria. DesiredCapabilities: {platformName=Android, deviceName=Android Emulator, appActivity=com.android.dialer.DialtactsActivity, appPackage=com.android.dialer, androidInstallTimeout=90000.0, autoGrantPermissions=true, testobject_api_key=09D588383E3B4F7BAD6512B5889B0328, testobject_device=Android Emulator, testobject_platform_name=Android}\nBuild info: version: 'unknown', revision: 'unknown', time: 'unknown'\nSystem info: host: 'manual1.prod.txl1.mrdc.saucelabs.net', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-112-generic', java.version: '1.8.0_162'\nDriver info: driver.version: unknown",
+              "estack": "Error: [init({\"platformName\":\"Android\",\"deviceName\":\"Android Emulator\",\"appActivity\":\"com.android.dialer.DialtactsActivity\",\"appPackage\":\"com.android.dialer\",\"androidInstallTimeout\":90000,\"autoGrantPermissions\":\"true\",\"testobject_api_key\":\"09D588383E3B4F7BAD6512B5889B0328\"})] The environment you requested was unavailable.\nThere is no device that matches your criteria. DesiredCapabilities: {platformName=Android, deviceName=Android Emulator, appActivity=com.android.dialer.DialtactsActivity, appPackage=com.android.dialer, androidInstallTimeout=90000.0, autoGrantPermissions=true, testobject_api_key=09D588383E3B4F7BAD6512B5889B0328, testobject_device=Android Emulator, testobject_platform_name=Android}\nBuild info: version: 'unknown', revision: 'unknown', time: 'unknown'\nSystem info: host: 'manual1.prod.txl1.mrdc.saucelabs.net', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-112-generic', java.version: '1.8.0_162'\nDriver info: driver.version: unknown\n    at C:\\Users\\bbdnet1454\\Desktop\\Projects\\Automation\\Js Appium\\node_modules\\wd\\lib\\webdriver.js:134:15\n    at Request._callback (C:\\Users\\bbdnet1454\\Desktop\\Projects\\Automation\\Js Appium\\node_modules\\wd\\lib\\http-utils.js:89:7)\n    at Request.self.callback (C:\\Users\\bbdnet1454\\Desktop\\Projects\\Automation\\Js Appium\\node_modules\\wd\\node_modules\\request\\request.js:186:22)\n    at Request.<anonymous> (C:\\Users\\bbdnet1454\\Desktop\\Projects\\Automation\\Js Appium\\node_modules\\wd\\node_modules\\request\\request.js:1163:10)\n    at IncomingMessage.<anonymous> (C:\\Users\\bbdnet1454\\Desktop\\Projects\\Automation\\Js Appium\\node_modules\\wd\\node_modules\\request\\request.js:1085:12)\n    at endReadableNT (_stream_readable.js:1101:12)\n    at process._tickCallback (internal/process/next_tick.js:152:19)"
+            },
+            "isRoot": false,
+            "uuid": "3439b6b0-ab60-4d30-8bcb-bd8c3642be5a",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after all\" hook",
+            "fullTitle": "android \"after all\" hook",
+            "timedOut": false,
+            "duration": 629,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "await driver.quit();",
+            "err": {
+              "message": "Error: [quit()] Error response status: 13, UnknownError - An unknown server-side error occurred while processing the command. Selenium error: A Session request has to have a session id\nBuild info: version: 'unknown', revision: 'unknown', time: 'unknown'\nSystem info: host: 'manual1.prod.txl1.mrdc.saucelabs.net', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-112-generic', java.version: '1.8.0_162'\nDriver info: driver.version: unknown",
+              "estack": "Error: [quit()] Error response status: 13, UnknownError - An unknown server-side error occurred while processing the command. Selenium error: A Session request has to have a session id\nBuild info: version: 'unknown', revision: 'unknown', time: 'unknown'\nSystem info: host: 'manual1.prod.txl1.mrdc.saucelabs.net', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-112-generic', java.version: '1.8.0_162'\nDriver info: driver.version: unknown\n    at exports.newError (C:\\Users\\bbdnet1454\\Desktop\\Projects\\Automation\\Js Appium\\node_modules\\wd\\lib\\utils.js:148:13)\n    at PromiseWebdriver.<anonymous> (C:\\Users\\bbdnet1454\\Desktop\\Projects\\Automation\\Js Appium\\node_modules\\wd\\lib\\callbacks.js:33:23)\n    at cb (C:\\Users\\bbdnet1454\\Desktop\\Projects\\Automation\\Js Appium\\node_modules\\wd\\lib\\webdriver.js:165:22)\n    at C:\\Users\\bbdnet1454\\Desktop\\Projects\\Automation\\Js Appium\\node_modules\\wd\\lib\\webdriver.js:179:5\n    at Request._callback (C:\\Users\\bbdnet1454\\Desktop\\Projects\\Automation\\Js Appium\\node_modules\\wd\\lib\\http-utils.js:89:7)\n    at Request.self.callback (C:\\Users\\bbdnet1454\\Desktop\\Projects\\Automation\\Js Appium\\node_modules\\wd\\node_modules\\request\\request.js:186:22)\n    at Request.<anonymous> (C:\\Users\\bbdnet1454\\Desktop\\Projects\\Automation\\Js Appium\\node_modules\\wd\\node_modules\\request\\request.js:1163:10)\n    at IncomingMessage.<anonymous> (C:\\Users\\bbdnet1454\\Desktop\\Projects\\Automation\\Js Appium\\node_modules\\wd\\node_modules\\request\\request.js:1085:12)\n    at endReadableNT (_stream_readable.js:1101:12)\n    at process._tickCallback (internal/process/next_tick.js:152:19)"
+            },
+            "isRoot": false,
+            "uuid": "cd00597c-5bda-48e7-ab6a-f9027687440f",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "tests": [
+          {
+            "title": "Login into app",
+            "fullTitle": "android Login into app",
+            "timedOut": false,
+            "duration": 0,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "await func.Click(driver,\"StyleId\",\"star\")\nawait func.Click(driver,\"StyleId\",\"one\")\nawait func.Click(driver,\"StyleId\",\"one\")\nawait func.Click(driver,\"StyleId\",\"one\")\nawait func.Click(driver,\"StyleId\",\"pound\")\n\nawait func.Click(driver,\"StyleId\",\"dial\")",
+            "err": {},
+            "isRoot": false,
+            "uuid": "f901e83f-f44a-4d5f-80a6-18a6a29a9957",
+            "isHook": false,
+            "skipped": true
+          }
+        ],
+        "suites": [],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [
+          "f901e83f-f44a-4d5f-80a6-18a6a29a9957"
+        ],
+        "duration": null,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 600000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2018
+}

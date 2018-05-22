@@ -1,0 +1,16 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "TestigSever.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pcloudy-appium-client": "^1.0.4",
+    "wd": "^1.6.2",
+    "webdriverio": "^4.12.0"
+  }
+}

@@ -1,0 +1,70 @@
+WINDOWS INSTALLATION
+Installation via NPM
+If you want to run Appium via an npm install, hack with Appium, or contribute to Appium, 
+you will need Node.js and NPM (use nvm, n, or brew install node to install Node.js. 
+Make sure you have not installed Node or Appium with sudo, otherwise you'll run into problems). 
+We recommend the latest stable version, though Appium supports Node 6+.
+
+The actual installation is as simple as:
+npm install -g appium
+
+if you encounter an error: 
+"MSBUILD : error MSB4132: The tools version "2.0" is unrecognized. Available tools versions are "4.0"."
+
+run the following Comand in Admin mode: 
+"npm install --global --production windows-build-tools"
+and
+"npm install -g node-gyp"
+
+============================================================================================================
+Testing frameworks::
+
+npm install appium mocha -g
+npm install chai == Assertions
+npm install chai-as-promised ==Assertions
+npm install mochawesome -g
+npm install --save-dev mochawesome
+
+how to run mochawesome reporting system::
+mocha test --reporter mochawesome --reporter-options autoOpen=true
+
+and go to https://www.npmjs.com/package/mochawesome-report-generator for more info
+
+Mocha – a JavaScript test framework for Node.js and the browser.
+https://mochajs.org/
+
+Chai – a BDD / TDD assertion library for Node and the browser.
+http://www.chaijs.com/
+
+WD – a library implementing the Selenium Webdriver protocol in Node.js
+https://github.com/admc/wd
+
+==========================================================================================================
+In order to Automate Hybrid apps
+install Latest chrome webdriver so that you can automate WebView
+comand :npm install appium --chromedriver_version="2.37"
+
+code
+More friendly methods to refer to Android Elements than by XPath.
+
+// driver.elementByXPath('//android.widget.FrameLayout') 
+driver.frameLayoutElement();
+ 
+// driver.elementByXPath('//android.widget.LinearLayout') 
+driver.linearLayoutElement();
+ 
+// driver.elementByXPath('//android.widget.ListView') 
+driver.listViewElement();
+ 
+// driver.elementByXPath('//android.view.support.v4.ViewPager) 
+driver.viewPagerElement();
+ 
+// driver.elementByXPath('//android.webkit.WebView) 
+driver.webViewElement();
+//=========================================================================================================
+For Cloud
+
+install
+npm install promise
+npm install tracer --save
+npm install -g webdriverio
